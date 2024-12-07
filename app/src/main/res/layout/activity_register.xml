@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- ImageView for the vector background -->
+    <ImageView
+        android:id="@+id/vectorBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_vector"
+        android:scaleType="fitXY"
+        android:contentDescription="Vector Background"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="646dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="51dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+
+        <!-- Title Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="8dp"
+            android:text="Registration"
+            android:textColor="#F3F4F6"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <!-- Username Field -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins"
+            android:text="Username"
+            android:textColor="#F3F4F6" />
+
+        <!-- Password Field -->
+        <EditText
+            android:id="@+id/unm"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/edittextborder"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:drawablePadding="10dp"
+            android:drawableTint="#1A2634"
+            android:fontFamily="@font/poppins"
+            android:gravity="center_vertical"
+            android:hint="Enter Username"
+            android:paddingStart="18dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="0dp"
+            android:paddingBottom="0dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins"
+            android:text="Password"
+            android:textColor="#F3F4F6" />
+
+        <!-- Email Field -->
+        <EditText
+            android:id="@+id/pwd"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/edittextborder"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:drawablePadding="10dp"
+            android:drawableTint="#1A2634"
+            android:fontFamily="@font/poppins"
+            android:gravity="center_vertical"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:paddingStart="18dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="0dp"
+            android:paddingBottom="0dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins"
+            android:text="Email ID"
+            android:textColor="#F3F4F6" />
+
+        <EditText
+            android:id="@+id/eid"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/edittextborder"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:drawablePadding="10dp"
+            android:drawableTint="#1A2634"
+            android:fontFamily="@font/poppins"
+            android:gravity="center_vertical"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="18dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="0dp"
+            android:paddingBottom="0dp"
+            android:textSize="14sp" />
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/regi"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#2C4562"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="REGISTER"
+            android:textColor="#F3F4F6"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/DonthaveanaccountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="Already have an account?"
+                android:textColor="#F3F4F6"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/signupTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Sign in"
+                android:textColor="#F3F4F6" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="Or continue with"
+            android:textColor="#F3F4F6"
+            android:textSize="13sp" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sgnup"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</RelativeLayout>

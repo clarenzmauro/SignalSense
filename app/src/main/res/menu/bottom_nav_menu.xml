@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_map"
+        android:icon="@drawable/ic_nav_map"
+        android:title="Map" />
+    <item
+        android:id="@+id/navigation_speed"
+        android:icon="@drawable/ic_nav_speed"
+        android:title="Speed Test" />
+    <item
+        android:id="@+id/navigation_stats"
+        android:icon="@drawable/ic_nav_stats"
+        android:title="Statistics" />
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_nav_profile"
+        android:title="Profile" />
+</menu>
