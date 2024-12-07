@@ -188,8 +188,8 @@ public class LoginActivity extends AppCompatActivity {
     private void navigateToHome(FirebaseUser user) {
         // Navigate to the main app screen
         Toast.makeText(this, "Welcome, " + user.getEmail(), Toast.LENGTH_SHORT).show();
-        // Intent intent = new Intent(this, HomeActivity.class);
-        // startActivity(intent);
-        // finish();
+        Intent intent = new Intent(this, MapActivity.class);
+        startActivity(intent);
+        finish();
     }
 }
